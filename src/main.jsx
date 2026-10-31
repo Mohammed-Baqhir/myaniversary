@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import { AnimatePresence, motion } from "framer-motion";
 import { Heart, X, ChevronLeft, ChevronRight, Gift, Sparkles, Flower2, ArrowDown } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 import "./styles.css";
 
 // 15 unique photos across the site — zero duplicates, zero reuse
@@ -392,6 +393,7 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
+      <Analytics />
     </main>
   );
 }
